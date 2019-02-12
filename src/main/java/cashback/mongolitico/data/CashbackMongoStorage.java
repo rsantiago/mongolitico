@@ -32,7 +32,7 @@ public abstract class CashbackMongoStorage<T extends Identifiable<T>> extends Ke
 		this.objectFactory = objectFactory;
 		this.dataAcess = dataAcess;
 	}
-	
+
 	
 	@Override
 	public Set<Id<T>> getAllIds() {

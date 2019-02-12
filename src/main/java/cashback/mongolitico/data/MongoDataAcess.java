@@ -64,7 +64,7 @@ public class MongoDataAcess implements DataAccessInterface {
 		orderFactory = new OrderFactory();
 		customerFactory = new CustomerFactory();
 
-		// configura as storages
+		// configura os objetos com as conexões ao banco de dados
 		genreStore = new MongoGenreStore(this,data.getCollection(Genre.COLLECTION_NAME), genreFactory);
 		albumStore = new MongoAlbumStore(this,data.getCollection(Album.COLLECTION_NAME), albumFactory);
 		customerStore = new MongoCustomerStore(this,data.getCollection(Customer.COLLECTION_NAME), customerFactory);
