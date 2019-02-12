@@ -7,11 +7,11 @@ Camada de persistência com mongodb
 
 Pacote utilizado para implementar a base da interação com o MongoDB.
 
-** CashbackMongoStorage **
+**CashbackMongoStorage**
 
 Implementa KeyValueStore, representando uma tabela ou uma coleção do mesmo documento - albums, promos, customers, cada uma destas entidades são armazenadas em uma KeyValueStore, e no caso da comunicação com o MongoDB estas coleções são gerenciadas por esta classe.
 
-** MongoDataAccess ** 
+**MongoDataAccess** 
 
 Mantém uma `CashbackMongoStorage` para cada tipo de entidade do domínio do negócio (uma storage para `Album` outra para `Customer` etc).
 
